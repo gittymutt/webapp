@@ -1,3 +1,11 @@
+
+used mobile boilerplate for this. If you want to "compile" it, you need to put back the tools directory into the build directory that comes with boilerplate. There's too much to put up here. Type ant in the build directory to make the app.
+
+
+
+
+
+
 # [Mobile Boilerplate](http://html5boilerplate.com/mobile/)
 
 Mobile Boilerplate is a professional front-end template that helps you build
