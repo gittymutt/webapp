@@ -63,7 +63,7 @@ function store_no_money_reasons() {
 
 
 $(document).on('pageshow', '#report' ,function(){
- 	document.write('hay!');
+ 	//document.write('hay!');
 
  });
 
