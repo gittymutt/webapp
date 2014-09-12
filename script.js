@@ -1,6 +1,20 @@
+
+
+
+$(document).ready( function() {
+	$("#money_interests_button").click(function () {
+		//alert('clicked on money interest button');
+		console.log("clicked money interests button");
+		
+		var url = "money_issues_3.html";    
+		$(location).attr('href',url);
+	});
+
+	
+});
+
+
 function store_money_interests() {
-	
-	
 	var wants = $("#wants").val();
 	var thoughts = $("#thoughts").val();
 	var expectations = $("#expectations").val();
@@ -13,9 +27,8 @@ function store_money_interests() {
 	console.log(localStorage.getItem("thoughts"));
 	console.log(localStorage.getItem("expectations"));
 
-	window.location.href = 'money_issues_2.html'; // go to next page
-	
-	window.location ="money_issues_2.html"; // for safari
+	var url = "money_issues_2.html";    
+	$(location).attr('href',url);
 	
 };
 
