@@ -55,7 +55,7 @@ function getData() {
 
 // how to store arrays in localstorage
 // http://stackoverflow.com/questions/3357553/how-to-store-an-array-in-localstorage
-
+/*
 function store_no_money_reasons() {
 
 	var chkArray = [];
@@ -80,6 +80,6 @@ $(document).on('pageshow', '#report' ,function(){
 
  });
 
-
+*/
 
 
