@@ -51,14 +51,15 @@
 
         <!-- Add your site or application content here -->
         <header><h1>Step 1: Define the conflict.</h1></header>
-            Complete the  great interesting sentence by filling in the boxes.</br>
+      <div data-role="page" id="pageone">
+            Complete the  great interesting sentence by filling in the boxes.<br>
             <form> 
-            I don't have enough money to:</br>
+            I don't have enough money to:<br>
 
-              <input id="no_money" type="checkbox" value="pay my bills">pay my bills.</input>.</br>
-              <input id="no_money" type="checkbox" value="go on vacation">go on vacation.</input>.</br>
-              <input id="no_money" type="checkbox" value="fix my car">fix my car.</input>.</br>
-              <input id="no_money" type="checkbox" value="buy health insurance">buy health insurance.</input>.</br>
+              <input id="no_money" type="checkbox" value="pay my bills">pay my bills.<br>
+              <input id="no_money" type="checkbox" value="go on vacation">go on vacation.<br>
+              <input id="no_money" type="checkbox" value="fix my car">fix my car.<br>
+              <input id="no_money" type="checkbox" value="buy health insurance">buy health insurance.<br>
                 <input type="button"  id="no_money_button" value="Submit">
           
             </form>
@@ -70,11 +71,15 @@
 
 
 
-
+	</div>
         <script src="js/vendor/jquery-2.1.0.min.js"></script>
         <script src="js/helper.js"></script>
         <script src="js/main.js"></script>
         <script src="script.js"></script>
+        
+
+
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
         <script>
         
         
@@ -94,7 +99,7 @@
 		
 			});
 		};
-	$(document).ready(function () {     
+	$(document).on("pagecreate","#pageone", function () {     
 		$("#no_money_button").click( function () {
 			store_no_money_reasons();
 			var url = "money_issues_2.html";    
